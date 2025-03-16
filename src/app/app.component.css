@@ -1,0 +1,169 @@
+
+mat-sidenav-container {
+  height: calc(100vh - 64px);
+
+}
+mat-toolbar.mat-primary{
+    background: #2727f7;
+    color: #fff;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+@media (max-width:460px){
+  mat-toobar{
+    font-size:1rem ;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .toolbar-buttons{
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+
+  .toolbar-buttons a{
+    display: none;
+  }
+  .custom-button a:nth-child(1){
+      display: block; /* Display the first link (GitHub) */
+  }
+  #nav-button{
+    padding: 0px !important;
+    margin-left: 0px !important;
+    border: 0px !important;
+  }
+  .mat-sidenav {
+    width: 60%; /* Adjust sidenav width as needed */
+  }
+}
+
+@media only screen and (min-width:601px){
+ .toolbar-buttons{
+  display: block;
+ }
+ .mat-sidenav{
+  width: 300px;
+ }
+} 
+
+/* uncomment this code to hide the menu button in bigger screen */
+/* @media only screen and (min-width: 601px) {
+    #menu-button {
+      display: none;
+    }
+  } */
+
+
+  #nav-button{
+    border: 1px solid rgb(239, 243, 241);
+    margin-left: 8px;
+    padding: 16px;
+    font-size:1rem ;
+    border-radius:8px ;
+  }
+  #nav-button:hover{
+    background-color: rgb(240, 255, 218);
+    color: black;
+  }
+
+.custom-button{
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+
+.mat-drawer-side{
+  border: none;
+}
+
+.mat-expansion-panel-header {
+  font-weight: normal;
+}
+
+.mat-drawer{
+  background-color: white;
+}
+
+/* footer {
+  background-color: #AF69EF;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  margin-top: 10px;
+} */
+
+.copyright {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .copyright {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+.panel-content {
+  padding: 10px;
+}
+
+.panel-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.panel-content li {
+  margin-bottom: 5px;
+  padding: 0 0 5px 5px; /* Top, Right, Bottom, Left */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.panel-content li:hover {
+   /* Light background color on hover */
+  background-color: #c4b923;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.panel-content li:hover:nth-child(2) {
+  background-color: #ef69b7;
+}
+
+.mat-expansion-panel {
+  box-shadow: none; /* Remove default box-shadow */
+}
+
+.mat-drawer-side{
+  border: none;
+}
+
+.mat-expansion-panel-header {
+  font-weight: normal;
+}
+
+.mat-drawer{
+  background-color: white;
+}
+
+mat-list-item:hover{
+  background-color: #f5f3d8; /* Light background color on hover */
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+
+.custom-button{
+  border: none;
+  background: none;
+  font-size: 1rem;
+}

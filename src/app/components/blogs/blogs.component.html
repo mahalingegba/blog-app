@@ -1,0 +1,30 @@
+<div class="container mt-4 blog">
+ <div class="row">
+    <h2>Welcome to Blogs Collections </h2>
+
+
+    <div class="col-md-4 mb-4">
+        <select class="form-select" [(ngModel)]="selectedType" (change)="onCategoryChange()">
+          <option value="all">All</option>
+          <option value="javascript">JavaScript</option>
+          <option value="angular">Angular</option>
+        </select>
+      </div>
+ </div>
+
+ <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let art of filteredArticles">
+        <mat-card *ngIf="selectedType === 'all' || art.category === selectedType">
+          <a href="{{art.articleLink}}" target="_blank">
+          <img mat-card-image class="article-image" src="{{ art.imageURL }}" alt="Article Image">
+        </a>
+        <mat-card-content>
+            <p>{{ art.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="{{ art.articleLink }}" target="_blank" mat-button>Read More...</a>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+ </div>
+</div>

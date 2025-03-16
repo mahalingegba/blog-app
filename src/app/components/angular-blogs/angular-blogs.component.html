@@ -1,0 +1,22 @@
+<div class="container mt-4 blog">
+    <div class="row">
+        <h2 style="padding: 2px;margin-bottom: 10px;">Welcomes to Angular Articles</h2>
+ 
+        <div class="col-md-4 mb-4" *ngFor="let ang of angularBlogs" style="padding: 2px;margin-bottom: 2px;">
+            <mat-card>
+            <a href="{{ang.articleLink}}" target="_blank"></a>
+           <img mat-card-image class="article-image" src="{{ ang.imageURL }}" alt="Article Image">
+
+           <mat-card-content>
+            <p>{{ ang.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="{{ ang.articleLink }}" target="_blank" mat-button>Read More...</a>
+          </mat-card-actions>
+
+            </mat-card>
+ 
+        </div>
+    </div>
+
+</div>

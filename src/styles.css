@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    color: #333;
+}

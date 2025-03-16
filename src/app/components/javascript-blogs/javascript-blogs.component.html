@@ -1,0 +1,22 @@
+<div class="container mt-4 blog">
+    <div class="row">
+        <h2 style="padding: 2px;margin-bottom: 10px;">Welcomes to JavaScript Articles</h2>
+ 
+        <div class="col-md-4 mb-4" *ngFor="let js of javascriptBlogs" style="padding: 2px;margin-bottom: 2px;">
+            <mat-card>
+            <a href="{{js.articleLink}}" target="_blank"></a>
+           <img mat-card-image class="article-image" src="{{ js.imageURL }}" alt="Article Image">
+
+           <mat-card-content>
+            <p>{{ js.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="{{ js.articleLink }}" target="_blank" mat-button>Read More...</a>
+          </mat-card-actions>
+
+            </mat-card>
+ 
+        </div>
+    </div>
+
+</div>

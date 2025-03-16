@@ -1,0 +1,45 @@
+.blog{
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+  /* .example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-container mat-form-field {
+    width: 220px;
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 12px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+  
+  .example-form-fields {
+    display: flex;
+    align-items: flex-start;
+  } */
+
+  .article-image{
+    width: 100%;
+    height: auto;
+    transition: trasform 0.3s ease;
+     /* Define the initial state of the image */
+     transform: scale(1);
+  }
+
+  .article-image:hover {
+    /* Define the zoomed-in state of the image when hovered */
+    transform: scale(0.98);
+  }
+  
+  
