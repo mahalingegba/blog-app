@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { MatCard, MatCardActions, MatCardContent, MatCardImage } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-javascript-blogs',
-  imports: [CommonModule,MatCard,MatCardActions,MatCardContent,FormsModule,MatCardImage,MatBottomSheetModule],
+  imports: [CommonModule,MatCard,MatCardActions,MatCardContent,FormsModule,MatCardImage, MatButtonModule,],
   templateUrl: './javascript-blogs.component.html',
   styleUrl: './javascript-blogs.component.css'
 })

@@ -154,16 +154,24 @@ mat-toolbar.mat-primary{
   background-color: white;
 }
 
-mat-list-item:hover{
-  background-color: #f5f3d8; /* Light background color on hover */
-  border-radius: 4px;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
+
+
+/* Active state styling */
+.mat-mdc-list-item.active-route {
+  background: rgba(63, 81, 181, 0.1);
+  
+  .custom-button {
+    color: #3f51b5;
+    font-weight: 500;
+  }
+
 }
 
 
-.custom-button{
-  border: none;
-  background: none;
-  font-size: 1rem;
+
+.panel-content li.active-route {
+    background: rgba(63, 81, 181, 0.1);
+    color: #3f51b5;
+    font-weight: 500;
+
 }

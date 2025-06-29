@@ -38,8 +38,13 @@
       <div class="panel-content" style="margin-top: -10px;margin-bottom: -20px;">
         <ul>
           <!-- <li *ngFor="let data of AngularTopics" (click)="navigateToJSTopic(data.id)">{{data.name}}</li> -->
-           <li routerLink="javascript"> JavaScript</li>
-           <li routerLink="angular"> Angular</li>
+           <li routerLink="javascript" routerLinkActive="active-route"
+     [routerLinkActiveOptions]="{exact: true}"> JavaScript</li>
+           <li routerLink="angular"  
+           routerLinkActive="active-route"
+     [routerLinkActiveOptions]="{exact: true}"
+           
+           > Angular</li>
         </ul>
       </div>
     </mat-expansion-panel>
@@ -48,9 +53,12 @@
 
     <mat-nav-list>
 
-      <mat-list-item routerLink="/blogs">
-        <button class="custom-button">Blogs </button>
-      </mat-list-item>
+    <a mat-list-item 
+     routerLink="/blogs" 
+     routerLinkActive="active-route"
+     [routerLinkActiveOptions]="{exact: true}">
+    <span class="custom-button">Blogs</span>
+  </a>
 
       <!-- <mat-list-item routerLink="/interview-preparation">
         <button class="custom-button">Interview Prep </button>
@@ -58,16 +66,31 @@
 
       <mat-divider></mat-divider>
 
-      <mat-list-item routerLink="/preparation">
-        <!-- Add this in mat-list-item: to close side automatically once click (click)="sidenav.close()" -->
-        <button class="custom-button">About me</button>
-      </mat-list-item>
+      <!-- <mat-list-item routerLink="/preparation">
+       Add this in mat-list-item: to close side automatically once click (click)="sidenav.close()" -->
+        <!-- <button class="custom-button">About me</button>
+      </mat-list-item> --> 
+
+       <a mat-list-item 
+     routerLink="/preparation"
+     routerLinkActive="active-route"
+     [routerLinkActiveOptions]="{exact: true}">
+    <span class="custom-button">About me</span>
+  </a>
 
       
 
-      <mat-list-item routerLink="/contact-us">
+      <!-- <mat-list-item routerLink="/contact-us">
         <button class="custom-button" id="contact-button">Contact</button>
-      </mat-list-item>
+      </mat-list-item> -->
+
+
+          <a mat-list-item 
+      routerLink="/contact-us"
+     routerLinkActive="active-route"
+     [routerLinkActiveOptions]="{exact: true}">
+    <span class="custom-button" id="contact-button">Contact</span>
+  </a>
     </mat-nav-list>
   </mat-sidenav>
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
@@ -42,7 +42,8 @@ import { CommonModule } from '@angular/common';
     MatSelectModule, 
     MatSidenavModule,
     RouterLink,
-    CommonModule
+    CommonModule,
+    RouterModule, 
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

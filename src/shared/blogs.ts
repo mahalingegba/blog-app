@@ -130,6 +130,14 @@
 //   ];
 
   export const blogList:any=[
+ {
+      title: 'Angular 20 New Features',
+      articleLink: 'https://medium.com/@mahalingegowdaba/finally-angular-20-is-here-lets-see-what-s-inside-df6f9b44dbbf',
+      imageURL: 'https://assets.bacancytechnology.com/blog/wp-content/uploads/2025/05/29121056/angular-20-thumbnail.jpg',
+      description: "",
+      category: 'angular'
+    },
+
     {
       title: 'Angular sub and Unsub',
       articleLink: 'https://medium.com/@mahalingegowdaba/unsubscribing-from-an-observable-eccc809d6d4f',
